@@ -1,0 +1,334 @@
+
+/* ========== Общие настройки ========== */
+body {
+  background-color: #111;
+  color: #eee;
+  margin: 0;
+  font-family: 'JetBrains Mono', monospace;
+}
+
+header {
+  background-color: #111;
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 2.4em;
+  color: #010118;
+  text-shadow: 0 0 5px #00ffc8, 0 0 15px #005050;
+  margin: 40px 0 10px;
+}
+
+/* ========== Навигация ========== */
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+  padding: 0;
+  margin: 0;
+  justify-content: center;
+}
+
+.navbar li {
+  position: relative;
+}
+
+.navbar a {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1.1rem;
+  color: #00ffc8;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  position: relative;
+}
+
+.navbar a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  left: 0;
+  bottom: -5px;
+  background-color: #00ffc8;
+  transition: width 0.3s ease;
+}
+
+.navbar a:hover {
+  color: #ffffff;
+}
+
+.navbar a:hover::after {
+  width: 100%;
+}
+
+/* ========== Hero Section ========== */
+.hero-section {
+  text-align: center;
+  padding: 60px 20px;
+  background-color: #121212;
+}
+
+.hero-section h2 {
+  font-size: 2.2em;
+  color: #00ffcc;
+  margin-bottom: 20px;
+}
+
+.hero-button {
+  display: inline-block;
+  padding: 12px 25px;
+  background-color: #00ffc8;
+  color: #111;
+  font-weight: bold;
+  border-radius: 8px;
+  text-decoration: none;
+  box-shadow: 0 0 10px #00ffc8;
+  transition: background-color 0.3s;
+}
+
+.hero-button:hover {
+  background-color: #00bfa5;
+}
+
+/* ========== About Me ========== */
+.about-section {
+  padding: 40px 20px;
+  background-color: #181818;
+  color: #eee;
+}
+
+.about-section h2 {
+  text-align: center;
+  color: #00ffc8;
+  margin-bottom: 30px;
+  font-size: 40px;
+}
+
+.about-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.about-grid p {
+  flex: 1 1 300px;
+  font-size: 1.1em;
+  line-height: 1.6;
+}
+
+.journey-img {
+  flex: 1 1 300px;
+  width: 100%;
+  max-width: 400px;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0, 255, 204, 0.2);
+  margin-top: 20px;
+}
+
+/* ========== Skills Section ========== */
+.skills-section {
+  text-align: center;
+  margin: 60px 0;
+}
+
+.skills-section h2 {
+  font-family: 'Courier New', monospace;
+  font-size: 40px;
+  color: #00ffd0;
+  margin-bottom: 40px;
+}
+
+.skills-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+  padding: 0 20px;
+}
+
+.skill-block {
+  flex: 1;
+  min-width: 280px;
+  max-width: 400px;
+  text-align: left;
+}
+
+.skill-block ul {
+  list-style: none;
+  padding-left: 0;
+  color: #ffffff;
+  font-family: 'Courier New', monospace;
+  font-size: 16px;
+}
+
+.skill-block li {
+  margin-bottom: 10px;
+}
+
+.skill-block li i {
+  margin-right: 10px;
+  color: #00ffc8;
+}
+
+.skill-image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.3);
+}
+
+/* ========== Projects Section ========== */
+.projects-section {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.projects-section h2 {
+  font-size: 40px;
+  color: #00ffc8;
+  margin-bottom: 40px;
+}
+
+.projects-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.project-card {
+  background-color: #222;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 300px;
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+.project-card img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.project-card h3 {
+  color: #00ffc8;
+}
+
+.project-card a {
+  text-decoration: none;
+  color: #00ffd0;
+}
+
+.project-card a:hover {
+  text-decoration: underline;
+  color: white;
+}
+
+/* ========== Contact Section ========== */
+.contact-section {
+  padding: 25px;
+  margin: 40px auto;
+  max-width: 350px;
+  background: #181818;
+  color: #eee;
+  border: 2px solid #00ffc8;
+  border-radius: 12px;
+  box-shadow:
+    0 0 15px rgba(0, 255, 200, 0.3),
+    0 0 30px rgba(0, 255, 200, 0.2) inset;
+  font-family: 'JetBrains Mono', monospace;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-section:hover {
+  transform: scale(1.02);
+  box-shadow:
+    0 0 25px rgba(0, 255, 255, 0.5),
+    0 0 40px rgba(0, 255, 255, 0.3) inset;
+}
+
+.contact-section h2 {
+  color: #00ffff;
+  font-size: 1.4em;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.contact-section a {
+  color: #00ffc8;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.contact-section a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+/* ========== Мобильная адаптация ========== */
+@media (max-width: 768px) {
+  .nav-wrapper {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .skills-grid,
+  .about-grid,
+  .projects-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-section {
+    width: 90%;
+    margin: 20px auto;
+  }
+}
+
+/* ========== Хедер и логотип ========== */
+.main-header {
+  background-image: url("images/digital.jpg"); /* путь к твоему изображению */
+  background-size: cover;         /* чтобы изображение заполнило всю область */
+  background-position: center;    /* центрирование */
+  background-repeat: no-repeat;   /* не повторять */
+  padding: 40px 0 20px;
+  text-align: center;
+}
+
+
+.header-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.logo {
+ width: 380px;
+  height: auto;
+  filter: drop-shadow(0 0 12px #00ffc8);
+   margin-top: -80px;           /* поднимает вверх */
+  margin-bottom: 15px;
+}
+
+.title {
+  font-size: 2.4rem;
+  color: #00ffc8;
+  text-shadow: 0 0 8px #00ffc8, 0 0 16px #00bfa5;
+  margin-top: -70px;  
+  margin-bottom: 30px;
+}
+
+
