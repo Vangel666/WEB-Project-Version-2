@@ -104,6 +104,9 @@ header h1 {
   color: #00ffc8;
   margin-bottom: 30px;
   font-size: 40px;
+  position: relative;
+  top: 150px;
+  left: -250px;
 }
 
 .about-grid {
@@ -331,4 +334,77 @@ header h1 {
   margin-bottom: 30px;
 }
 
+
+.clickable-text {
+  color: #00ffc8;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.85);
+}
+
+.modal-content {
+  background-color: #111;
+  margin: 5% auto;
+  padding: 20px;
+  border: 2px solid #00ffc8;
+  width: 90%;
+  max-width: 800px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 0 20px #00ffc8;
+  color: white;
+}
+
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.image-grid img {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,255,200,0.4);
+  transition: transform 0.3s ease;
+}
+
+.image-grid img:hover {
+  transform: scale(1.05);
+}
+
+.close-button {
+  float: right;
+  font-size: 28px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.modal-content {
+  background-color: #111;
+  margin: 5% auto;
+  padding: 20px;
+  border: 2px solid #00ffc8;
+  width: 90%;
+  max-width: 800px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 0 20px #00ffc8;
+  color: white;
+
+  /* Добавим прокрутку */
+  max-height: 80vh;
+  overflow-y: auto;
+}
+  
 

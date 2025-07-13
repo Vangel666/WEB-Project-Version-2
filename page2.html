@@ -36,8 +36,22 @@
         My name is Leon, I live in Petah Tikva and I am 39 years old. I have worked for 15 years at Ivory Computers.
         Recently, I decided to change my life and started my journey into the world of QA.
         This path is very interesting and exciting — every day I learn something new.
-        One of my hobbies is 3D printing. I love creating interesting and useful things.
+        One of my hobbies is <span class="clickable-text" onclick="openModal()">3D printing</span>. I love creating interesting and useful things.
       </p>
+
+<!-- Модальное окно -->
+<div id="imageModal" class="modal">
+  <div class="modal-content">
+    <span class="close-button" onclick="closeModal()">&times;</span>
+    <h3>My 3D Prints</h3>
+    <img src="images/1.png" alt="3D print 1" class="modal-img">
+    <img src="images/2.png" alt="3D print 2" class="modal-img">
+    <img src="images/3.png" alt="3D print 2" class="modal-img">
+  </div>
+</div>
+
+
+
       <img src="images/mypicture.jpg" alt="QA Journey" class="journey-img">
     </div>
   </section>
@@ -56,7 +70,7 @@
           <li><i class="fa-brands fa-linux"></i> Linux & Terminal</li>
           <li><i class="fa-brands fa-git-alt"></i> Version Control (Git)</li>
           <li><i class="fa-brands fa-python"></i> Test Automation (Python)</li>
-           <li><i class="fa-solid fa-warehouse"></i> Parity – Business & Inventory Management</li>
+           <li><i class="fa-solid fa-warehouse"></i>Parity – Business & Inventory Management</li>
 </ul>
         </ul>
       </div>
@@ -85,6 +99,24 @@
       <p><i class="fas fa-envelope"></i> Email: <a href="mailto:vangelion1986@gmail.com">vangelion1986@gmail.com</a></p>
       <p><i class="fab fa-github"></i> GitHub: <a href="https://github.com/Vangel666" target="_blank">github.com/Vangel666</a></p>
     </div>
-  </section>
+  </section>3
+<script>
+  function openModal() {
+    document.getElementById('imageModal').style.display = 'block';
+  }
+
+  function closeModal() {
+    document.getElementById('imageModal').style.display = 'none';
+  }
+
+  // Optional: Close modal if clicked outside content
+  window.onclick = function(event) {
+    const modal = document.getElementById('imageModal');
+    if (event.target === modal) {
+      closeModal();
+    }
+  }
+</script>
+
 </body>
 </html>
