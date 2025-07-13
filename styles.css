@@ -322,29 +322,5 @@ body {
   transform: scale(1.05);
 }
 
-@keyframes slideDown {
-  0% {
-    opacity: 0;
-    transform: translate(-50%, -100%);
-  }
-  100% {
-    opacity: 1;
-    transform: translate(-50%, 0);
-  }
-}
-
-#modal {
-  display: none;
-  position: fixed;
-  top: 20%;
-  left: 50%;
-  transform: translate(-50%, 0);
-  background: #222;
-  padding: 20px;
-  border: 2px solid #00ffc8;
-  color: white;
-  z-index: 1000;
-  opacity: 0;
-}
 
 

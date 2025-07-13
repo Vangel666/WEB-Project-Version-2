@@ -131,7 +131,7 @@ header h1 {
   max-width: 400px;
   border-radius: 8px;
   box-shadow: 0 0 15px rgba(0, 255, 204, 0.2);
-  margin-top: 20px;
+  margin-top: -100px;
 }
 
 /* ========== Skills Section ========== */
@@ -328,7 +328,7 @@ header h1 {
 
 .title {
   font-size: 2.4rem;
-  color: #00ffc8;
+  color: #023a31;
   text-shadow: 0 0 8px #00ffc8, 0 0 16px #00bfa5;
   margin-top: -70px;  
   margin-bottom: 30px;
